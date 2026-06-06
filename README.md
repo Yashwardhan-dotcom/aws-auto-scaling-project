@@ -159,6 +159,19 @@ All instances registered with the target group are passing health checks success
 
 ---
 
+### Application Load Balancer
+
+The Application Load Balancer distributes incoming traffic across multiple EC2 instances running in different Availability Zones.
+
+![ALB](screenshots/load-balancer/alb-active.png)
+
+When I hit the load-balancer's domain then I get this instance
+![Output:1](screenshots/load-balancer/alb-response-instance-1.png)
+When i refresh the site then I am redirected to another instance as shown below
+![Output:2](screenshots/load-balancer/alb-response-instance-2.png)
+
+---
+
 ## Learning Outcomes
 
 Through this project I learned:
