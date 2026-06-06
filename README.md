@@ -64,7 +64,8 @@ The project uses a custom VPC with public subnets distributed across multiple Av
 
 ![VPC Overview](screenshots/networking/01-vpc-overview.png)
 
-![Subnets](screenshots/networking/02-subnets-overview.png)
+![Subnets](screenshots/networking/2.1-public_subnets-overview.png)
+![Subnets](screenshots/networking/2.2-private_subnet-overview.png)
 
 ![Internet Gateway](screenshots/networking/03-internet-gateway.png)
 
@@ -83,7 +84,7 @@ A dedicated security group was created for web servers.
 | TCP | 22 | SSH Administration |
 | TCP | 80 | HTTP Web Traffic |
 
-![Security Group](screenshots/security/01-security-group-overview.png)
+![Security Group](screenshots/security/01-web-server-sg.png)
 
 ---
 
@@ -105,8 +106,10 @@ The User Data script automatically:
 The deployed instance successfully generated a webpage displaying its own Instance ID.
 
 ![Running EC2 Instance](screenshots/ec2/01-ec2-instance-running.png)
+![Details of EC2 Instance](screenshots/ec2/02-ec2-instance-details.png)
+![Security Groups Attached to EC2](screenshots/ec2/03-security-group-attached.png)
 
-![User Data Success](screenshots/ec2/02-user-data-success.png)
+![User Data Success](screenshots/ec2/04-user-data-success.png)
 
 ---
 
