@@ -22,8 +22,6 @@ This architecture demonstrates a highly available web application deployed acros
 
 - [architecture-notes.md](architecture-notes.md)
 
-Architecture diagram will be added after the Auto Scaling implementation is completed.
-
 ---
 
 ## Features
@@ -188,11 +186,23 @@ When average CPU utilization exceeded the configured threshold:
   ![Automatic Scaling Group Response](screenshots/cloudwatch/asg-scaling-event.png)
 
 - This resulted in the launch of new instance that is visible on the dashboard.
-  ![New Instances Launched](screenshots/cloudwatch/3-EC2-Instances)
+  ![New Instances Launched](screenshots/cloudwatch/3-EC2-Instances.png)
 
 This demonstrates automatic scaling and self-healing infrastructure.
 
 ---
+
+## Results
+
+The final architecture successfully demonstrated:
+
+- Traffic distribution across multiple EC2 instances
+- Automatic instance replacement after health check failures
+- Dynamic scaling based on CPU utilization
+- High availability across multiple Availability Zones
+- Automated server provisioning using Launch Templates and User Data
+
+  ---
 
 ## Learning Outcomes
 
@@ -206,12 +216,17 @@ Through this project I learned:
 - IMDSv2 Metadata Service
 - Infrastructure Troubleshooting
 - Infrastructure Documentation
+- Application Load Balancers
+- Target Groups and Health Checks
+- Auto Scaling Policies
+- CloudWatch Monitoring
+- High Availability Architecture
 
 ---
 
 ## Project Status
 
-🚧 In Progress
+✅ Completed
 
 Current Progress:
 
@@ -230,10 +245,20 @@ Current Progress:
 - [x] Auto Scaling Group
 - [x] CloudWatch Dashboard
 - [x] Stress Testing
-- [ ] Architecture Diagram
-- [ ] Final Documentation
+- [x] Architecture Diagram
+- [x] Final Documentation
 
 ---
+
+## Future Improvements
+
+- HTTPS using AWS Certificate Manager
+- Route53 custom domain integration
+- CI/CD pipeline using GitHub Actions
+- Infrastructure as Code using Terraform
+- CloudWatch Alarms and SNS notifications
+
+  ---
 
 ## Author
 
