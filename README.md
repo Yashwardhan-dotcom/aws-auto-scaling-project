@@ -172,6 +172,24 @@ When i refresh the site then I am redirected to another instance as shown below
 
 ---
 
+## Auto Scaling Demonstration
+
+A CPU stress test was performed on the application servers.
+![CPU Stress](screenshots/cloudwatch/CPU_Stress.png)
+When average CPU utilization exceeded the configured threshold:
+![Stress Graph](screenshots/cloudwatch/cpu-during-stress.png)
+
+- CloudWatch detected increased CPU usage
+- Auto Scaling Group launched an additional EC2 instance
+- The new instance was automatically registered with the Target Group
+- The Application Load Balancer began routing traffic to the new instance
+  ![Automatic Scaling Group Response](screenshots/cloudwatch/asg-scaling-event.png)
+  ![New Instances Launched](screenshots/cloudwatch/3-EC2-Instances)]
+
+This demonstrates automatic scaling and self-healing infrastructure.
+
+---
+
 ## Learning Outcomes
 
 Through this project I learned:
@@ -204,10 +222,10 @@ Current Progress:
 - [x] IMDSv2 Metadata Integration
 - [x] Launch Template
 - [x] Target Group
-- [ ] Application Load Balancer
-- [ ] Auto Scaling Group
-- [ ] CloudWatch Dashboard
-- [ ] Stress Testing
+- [x] Application Load Balancer
+- [x] Auto Scaling Group
+- [x] CloudWatch Dashboard
+- [x] Stress Testing
 - [ ] Architecture Diagram
 - [ ] Final Documentation
 
