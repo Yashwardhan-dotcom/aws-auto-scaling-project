@@ -149,6 +149,16 @@ A reusable launch template was created to standardize EC2 instance deployment.
 
 ---
 
+## Project Screenshots
+
+### Target Group Health Checks
+
+![Target Group Health](screenshots/target-group/target-group-healthy.png)
+
+All instances registered with the target group are passing health checks successfully.
+
+---
+
 ## Learning Outcomes
 
 Through this project I learned:
@@ -180,7 +190,7 @@ Current Progress:
 - [x] EC2 Bootstrap Automation
 - [x] IMDSv2 Metadata Integration
 - [x] Launch Template
-- [ ] Target Group
+- [x] Target Group
 - [ ] Application Load Balancer
 - [ ] Auto Scaling Group
 - [ ] CloudWatch Dashboard
