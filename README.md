@@ -14,9 +14,11 @@ The infrastructure automatically scales based on CPU utilization and replaces un
 
 ---
 
-## Architecture
+## Architecture Diagram
 
-Detailed architecture planning is documented in:
+![Architecture](screenshots/architecture/architecture-diagram.png)
+
+This architecture demonstrates a highly available web application deployed across multiple Availability Zones using an Application Load Balancer, Auto Scaling Group, EC2 instances, and CloudWatch-based scaling policies.
 
 - [architecture-notes.md](architecture-notes.md)
 
