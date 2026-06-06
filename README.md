@@ -131,6 +131,24 @@ This improvement made the automation compatible with modern AWS security standar
 
 ---
 
+## Launch Template
+
+A reusable launch template was created to standardize EC2 instance deployment.
+
+### Configuration
+
+- Ubuntu Server
+- t3.micro Instance Type
+- Web Server Security Group
+- Automated Bootstrap Script
+- IMDSv2 Metadata Integration
+
+### Screenshot
+
+![Launch Template](screenshots/launch-template/01-launch-template-overview.png)
+
+---
+
 ## Learning Outcomes
 
 Through this project I learned:
@@ -161,7 +179,7 @@ Current Progress:
 - [x] Security Group Configured
 - [x] EC2 Bootstrap Automation
 - [x] IMDSv2 Metadata Integration
-- [ ] Launch Template
+- [x] Launch Template
 - [ ] Target Group
 - [ ] Application Load Balancer
 - [ ] Auto Scaling Group
