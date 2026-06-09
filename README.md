@@ -186,7 +186,7 @@ When average CPU utilization exceeded the configured threshold:
   ![Automatic Scaling Group Response](screenshots/cloudwatch/asg-scaling-event.png)
 
 - This resulted in the launch of new instance that is visible on the dashboard.
-  ![New Instances Launched](screenshots/cloudwatch/3-EC2-Instances.png)
+  ![New Instances Launched](screenshots/cloudwatch/3-EC2-Instances)
 
 This demonstrates automatic scaling and self-healing infrastructure.
 
